@@ -51,18 +51,18 @@
                         @else
                             <li class="nav-item">
                                 <a 
-                                class="nav-link" 
+                                class="nav-link btn btn-success text-light" 
                                 href="{{ route('posts.index') }}"
                                 >
                                     Gestione Post
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item ml-2 mr-2">
                                 <a 
-                                class="nav-link"
+                                class="nav-link btn btn-primary text-light"
                                 href="{{route('posts.create')}}"
                                 >
-                                    Crea Post
+                                    + Crea Post
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
