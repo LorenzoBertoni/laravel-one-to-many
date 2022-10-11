@@ -56,7 +56,7 @@ class PostController extends Controller
 
         $newPost->save();
 
-        return redirect()->route('posts.index')->with('created', 'Creazione avvenuta con successo');
+        return redirect()->route('admin.posts.index')->with('created', 'Creazione avvenuta con successo');
     }
 
     /**
@@ -105,7 +105,7 @@ class PostController extends Controller
 
         $post->update($data);
 
-        return redirect()->route('posts.index')->with('edited', 'Modifiche apportate correttamente');
+        return redirect()->route('admin.posts.index')->with('edited', 'Modifiche apportate correttamente');
     }
 
 
@@ -135,8 +135,7 @@ class PostController extends Controller
     {
         $post->delete();
         
-        return redirect()->route('posts.index')->with('cancelled', 'Eliminazione avvvenuta con successo');
+        return redirect()->route('admin.posts.index')->with('cancelled', 'Eliminazione avvvenuta con successo');
     }
 
-    
 }

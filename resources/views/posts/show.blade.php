@@ -23,7 +23,7 @@
                     </td>
                     <td class="actions">
                         <a 
-                        href="{{route('posts.index')}}"
+                        href="{{route('admin.posts.index')}}"
                         class="btn btn-primary"
                         >
                             Torna alla lista

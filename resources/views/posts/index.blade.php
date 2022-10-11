@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+    {{-- ***Messaggi d'errore*** --}}
     <div class="container">
         @if (session('created'))
             <div class="alert alert-success">
@@ -22,6 +24,7 @@
             </div>
         @endif
     </div>
+    {{-- ***Messaggi d'errore*** --}}
 
     <div class="container">
         <table class="table table-striped">
@@ -40,19 +43,19 @@
                         <td>{{$post->slug}}</td>
                         <td class="actions p-2 d-flex justify-content-center align-items-center">
                             <a 
-                            href="{{route('posts.show', ['post' => $post])}}"
+                            href="{{route('admin.posts.show', ['post' => $post])}}"
                             class="btn btn-primary ml-3"
                             >
                                 Vedi Info
                             </a>
                             <a 
-                            href="{{route('posts.edit', ['post' => $post])}}"
+                            href="{{route('admin.posts.edit', ['post' => $post])}}"
                             class="btn btn-warning ml-3"
                             >
                                 Modifica
                             </a>
                             <form 
-                            action="{{route('posts.destroy', ['post' => $post])}}"
+                            action="{{route('admin.posts.destroy', ['post' => $post])}}"
                             method="POST"
                             >
                                 @csrf

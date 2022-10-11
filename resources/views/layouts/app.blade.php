@@ -52,7 +52,7 @@
                             <li class="nav-item">
                                 <a 
                                 class="nav-link btn btn-success text-light" 
-                                href="{{ route('posts.index') }}"
+                                href="{{ route('admin.posts.index') }}"
                                 >
                                     Gestione Post
                                 </a>
@@ -60,7 +60,7 @@
                             <li class="nav-item ml-2 mr-2">
                                 <a 
                                 class="nav-link btn btn-primary text-light"
-                                href="{{route('posts.create')}}"
+                                href="{{route('admin.posts.create')}}"
                                 >
                                     + Crea Post
                                 </a>

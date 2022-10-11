@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <form 
-        action="{{route('posts.update', ['post' => $post])}}" 
+        action="{{route('admin.posts.update', ['post' => $post])}}" 
         method="POST"
         >
             @csrf

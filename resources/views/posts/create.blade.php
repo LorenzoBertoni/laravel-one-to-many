@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <form 
-        action="{{route('posts.store')}}" 
+        action="{{route('admin.posts.store')}}" 
         method="POST"
         >
             @csrf
